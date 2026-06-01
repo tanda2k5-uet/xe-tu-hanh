@@ -104,13 +104,13 @@ python benchmark.py
 BAT DAU CHAY BENCHMARK...
 So xe      | Diem so (Throughput)   | So lan ket (Timeouts)     | TG tinh toan (ms) | Tong TG chay (s)
 ---------------------------------------------------------------------------------------------------------
-5          | 261                    | 0                         | 7.57           ms | 2.21 s
-10         | 496                    | 0                         | 14.98          ms | 9.23 s
-15         | 786                    | 0                         | 53.57          ms | 57.61 s
-20         | 1010                   | 0                         | 26.97          ms | 39.95 s
+5          | 261                    | 0                         | 9.72           ms | 2.81 s
+10         | 496                    | 0                         | 19.20          ms | 11.71 s
+15         | 786                    | 0                         | 51.99          ms | 55.38 s
+20         | 1010                   | 0                         | 77.98          ms | 114.13 s
 ```
 
-*Ghi chú: Khi chạy benchmark, hệ thống sẽ tự sinh ra ảnh `benchmark_map.png` để lưu lại cấu trúc bản đồ ngẫu nhiên đã được dùng để kiểm thử.*
+*Ghi chú: Khi chạy benchmark, hệ thống sẽ tự sinh ra ảnh `benchmark_map.png` để lưu lại cấu trúc bản đồ ngẫu nhiên đã được dùng để kiểm thử*
 
 ---
 
