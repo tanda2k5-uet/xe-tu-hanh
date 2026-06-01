@@ -85,7 +85,7 @@ Trong lúc hệ thống đang tự động chạy, bạn có thể can thiệp t
 <p align="center">
   <img src="images/manual_control.png" alt="Chế độ điều khiển thủ công" width="750">
   <br>
-  <em>Hình 4. Cơ chế điều khiển chia sẻ Người – Máy: xe được chọn (vòng tròn vàng) được cấp đặc quyền ưu tiên tối thượng</em>
+  <em>Hình 4. Cơ chế điều khiển chia sẻ Người – Máy: xe được chọn (vòng tròn vàng) được cấp đặc quyền ưu tiên cao nhất</em>
 </p>
 
 ## 📂 Cấu trúc mã nguồn
