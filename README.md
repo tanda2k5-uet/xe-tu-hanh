@@ -85,14 +85,41 @@ Trong lúc hệ thống đang tự động chạy, bạn có thể can thiệp t
 <p align="center">
   <img src="images/manual_control.png" alt="Chế độ điều khiển thủ công" width="750">
   <br>
-  <em>Hình 4. Cơ chế điều khiển chia sẻ Người – Máy: xe được chọn (vòng tròn vàng) được cấp đặc quyền ưu tiên cao nhất</em>
+  <em>Hình 4. Cơ chế điều khiển chia sẻ Người – Máy: xe được chọn (vòng tròn vàng) được cấp đặc quyền ưu tiên tối thượng</em>
 </p>
+
+## 📊 Đánh giá hiệu năng (Benchmark)
+
+Dự án cung cấp script `benchmark.py` để chạy hệ thống ở chế độ Headless (không có giao diện đồ họa Pygame) nhằm đánh giá tốc độ tìm đường của thuật toán **ST-BFS** khi mở rộng số lượng xe (5, 10, 15, 20 xe).
+
+### Cách chạy benchmark:
+
+```bash
+python benchmark.py
+```
+
+### Kết quả mẫu (1000 Ticks - Bản đồ 30x30 - 20% Vật cản):
+
+```text
+BAT DAU CHAY BENCHMARK...
+So xe      | Diem so (Throughput)   | So lan ket (Timeouts)     | TG tinh toan (ms) | Tong TG chay (s)
+---------------------------------------------------------------------------------------------------------
+5          | 261                    | 0                         | 7.57           ms | 2.21 s
+10         | 496                    | 0                         | 14.98          ms | 9.23 s
+15         | 786                    | 0                         | 53.57          ms | 57.61 s
+20         | 1010                   | 0                         | 26.97          ms | 39.95 s
+```
+
+*Ghi chú: Khi chạy benchmark, hệ thống sẽ tự sinh ra ảnh `benchmark_map.png` để lưu lại cấu trúc bản đồ ngẫu nhiên đã được dùng để kiểm thử.*
+
+---
 
 ## 📂 Cấu trúc mã nguồn
 
 ```
 BFS_chot/
-├── test.py                 ← Điểm khởi chạy chương trình chính
+├── test.py                 ← Điểm khởi chạy chương trình chính (Giao diện UI)
+├── benchmark.py            ← Script chạy đánh giá hiệu năng (Headless)
 ├── requirements.txt        ← Khai báo thư viện cần cài đặt
 ├── core/                   ← Tầng điều khiển & giao diện
 │   ├── application.py      ← Bộ điều khiển trung tâm (Main Controller)
